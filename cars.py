@@ -9,7 +9,7 @@ def porsche_cars_info():
   url = f"https://www.porsche.com/middle-east/_egypt_/models/?compare"
  
   html = requests.get(url).text  
-  soup = bs(html, "html.parser")
+  soup = bs(html, "html.parser") 
 
   models = soup.find_all("div", {"class": "m-14-model-series"})
   print(f"There Is: {len(models)} Models.", end="\n\n")
