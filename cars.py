@@ -14,7 +14,7 @@ def porsche_cars_info():
   models = soup.find_all("div", {"class": "m-14-model-series"})
   print(f"There Is: {len(models)} Models.", end="\n\n")
 
-  master_list = []
+  master_list = [] 
 
   for model in models:
     model_name = model.find("h3", {"class": "m-14-model-series-divider"}).text
