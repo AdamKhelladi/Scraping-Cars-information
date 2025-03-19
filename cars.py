@@ -17,8 +17,8 @@ def porsche_cars_info():
 
   for model in models:
     model_name = model.find("h3", {"class": "m-14-model-series-divider"}).text
-    
     cars = model.find_all("div", {"class": "m-14-model-tile-link-overview"})
+    
     for car in cars: 
       
       car_img = car.find("img").get("data-image-src")
