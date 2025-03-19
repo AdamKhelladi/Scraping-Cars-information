@@ -23,7 +23,6 @@ def porsche_cars_info():
       car_img = car.find("img").get("data-image-src")
 
       car_name = car.find("div", {"class": "m-14-model-name"}).text
-
       car_price = car.find("div", {"class": "m-14-model-price"}).text.split()
       car_price = "".join(car_price)[6:14]
 
