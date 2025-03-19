@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup as bs
 import pandas as pd
 
 def porsche_cars_info():
-
   url = f"https://www.porsche.com/middle-east/_egypt_/models/?compare" 
  
   html = requests.get(url).text  
