@@ -21,7 +21,6 @@ def porsche_cars_info():
     cars = model.find_all("div", {"class": "m-14-model-tile-link-overview"})
     for car in cars: 
       car_img = car.find("img").get("data-image-src")
-
       car_name = car.find("div", {"class": "m-14-model-name"}).text
       car_price = car.find("div", {"class": "m-14-model-price"}).text.split()
       car_price = "".join(car_price)[6:14]
