@@ -1,8 +1,9 @@
 # Scrape Porsche Cars Website: 
 
 import requests
-from bs4 import BeautifulSoup as bs
 import pandas as pd
+
+from bs4 import BeautifulSoup as bs
 
 def porsche_cars_info():
   url = f"https://www.porsche.com/middle-east/_egypt_/models/?compare" 
